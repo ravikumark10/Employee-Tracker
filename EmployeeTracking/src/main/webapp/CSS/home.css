@@ -1,0 +1,96 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f9fc;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #d0d0e1;
+    padding: 20px 10px;
+    border-bottom: 8px solid #414144;
+}
+h2{
+    text-align: center;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right:2px solid #414144;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #b2b2b8;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color:#b2b2b8;
+    color: white;
+}
+
+#logout{
+    float: right;
+    display: inline-block;
+}
+#logout a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+.check-in{
+    margin-top:200px ;
+    margin-left: 400px;
+    margin-right: 700px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px 5px #7F7F7F;
+}
+.check-in button{
+    background-color: #f2c4ab;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    .check-in{
+        text-align: center;
+    }
+}
+
